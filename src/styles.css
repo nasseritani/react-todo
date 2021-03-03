@@ -1,0 +1,71 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: cursive;
+  box-sizing: border-box;
+}
+* > :focus {
+  outline: none;
+}
+H1 {
+  text-align: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: row;
+}
+input[type="text"] {
+  width: 25rem;
+  height: 2em;
+}
+.add {
+  position: relative;
+  right: 2rem;
+  background: orange;
+  border: 0px;
+  height: 1rem;
+}
+select {
+  height: 2rem;
+}
+.todo-container {
+  display: flex;
+  width: 100%;
+  /* flex: 1; */
+  justify-content: center;
+  flex-direction: row;
+}
+.todo-list {
+  list-style-type: none;
+  width: 25rem;
+
+  padding: 0px;
+}
+.todo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.todo-Item {
+  flex: 1;
+  padding: 10px;
+}
+.todo-Item:hover {
+  background: #e7e7fa;
+}
+.completed {
+  text-decoration: line-through;
+}
+.btnTrash {
+  border: 0px;
+  width: 3em;
+  background: orange;
+}
+.btnCheck {
+  width: 3em;
+  border: 0px;
+  background: green;
+}

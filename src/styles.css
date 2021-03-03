@@ -5,9 +5,47 @@
   font-family: cursive;
   box-sizing: border-box;
 }
+body {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
 * > :focus {
   outline: none;
 }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #ff6f47;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+  height: 2rem;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: -15px;
+  right: 0;
+  padding: 1rem;
+  background: #ff6f47;
+  cursor: pointer;
+  pointer-events: none;
+}
+
 H1 {
   text-align: center;
 }
@@ -28,9 +66,7 @@ input[type="text"] {
   border: 0px;
   height: 1rem;
 }
-select {
-  height: 2rem;
-}
+
 .todo-container {
   display: flex;
   width: 100%;
